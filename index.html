@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+	<title> Tuff Festival </title>
+	<link rel="stylesheet" type="text/css" href="Style.css" >
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body> 
+<div class = "section1" id="mysection1">
+	<img src = "Images/TUFFLOGOV2.png" width=180 height=180>
+	<img src = "Images/TUFF TITLE2.png" width=1700 height = 180 >
+	<ul>
+  		<li><a href="Index.html" class="active">Home</a></li>
+  		<li><a href="Entertainment.html">Entertainment</a></li>
+  		<li><a href="Hospitality.html">Hospitality</a></li>
+		<li><a href="Prices.html">Prices</a></li>
+		<li><a href="Travel.html">Travel</a></li>
+		<li><a href="Accomodation.html">Accomodation</a></li>
+  		<li style="float:right"><a href="Contact Us.html">Contact Us</a></li>
+	</ul>
+</div>
+<div class = "marquee1"> <marquee> Welcome to the world of Tuff Festival! Welcome to the world of Tuff Festival! Welcome to the world of Tuff Festival! Welcome to the world of Tuff Festival! Welcome to the world of Tuff Festival! Welcome to the world of Tuff Festival! Welcome to the world of Tuff Festival! Welcome to the world of Tuff Festival! Welcome to the world of Tuff Festival! </marquee>
+</div>
+<div class = "section2">
+
+<h1> Rocking your world since 20-20-TUFF. </h1>
+</div>
+
+
+
+<div class = "welcometext">
+<div id="content">
+	<p1>Tuff Festival is celebrating a huge milestone — 100 years of music, memories and community spirit. First held a century ago, the festival has grown from
+	a small local event into a tradition that brings hundreds of thousands of people together each year. This year's festival is a chance to look back at our amazing
+	history while creating new memories for the next generation.</p1>
+<br>
+<br>
+	<p2>The music at Tuff Festival is all about family-friendly rock, with live performances designed to be fun, energetic and safe for everyone. The stage will host a variety
+	of bands who keep the spirit of rock alive in a way that both kids and adults can enjoy. From catchy tunes to uplifting rhythms, the music is made to bring families together
+	in celebration. </p2>
+<br>
+<br>
+	<p3>Alongside the music, the festival also offers food stalls, fun games and activities for visitors of all ages. Families can enjoy everything from tasty treats to creative workshops,
+	all in a welcoming and festive atmosphere. With our mix of entertainment, history and community, Tuff Festival is more than just a  concert. It's a tradition worth celebrating.
+	</p3>
+</div>
+
+<div>
+<button onclick="zoomIn()">Zoom In</button>
+<button onclick="zoomOut()">Zoom Out</button>
+</div>
+</div>
+
+<script>
+  let scale = 1;
+  const content = document.getElementById("content");
+
+  function zoomIn() {
+    scale += 0.1;
+    content.style.fontSize = scale + "rem";
+  }
+
+  function zoomOut() {
+    scale = Math.max(0.6, scale - 0.1);
+    content.style.fontSize = scale + "rem";
+  }
+</script>
+
+
+<div class="images-gallery">
+  <img src="Images/hardd.avif" alt="Cinque Terre" width=700 height=530>
+  <img src="Images/top10tuff.avif" alt="Forest" width=700 height=530>
+  <img src="Images/tuffest.avif" alt="Northern Lights" width=700 height=530>
+  <img src="Images/tufffestival.avif" alt="Mountains" width=700 height=530>
+  <img src="Images/pfestival.avif" alt="Cinque Terre" width=700 height=530>
+  <img src="Images/djbaby.jpg" alt="Forest" width=700 height=530>
+  <img src="Images/djbabyface.jpeg" alt="Northern Lights" width=700 height=530>
+  <img src="Images/ttsfunk.jpg" alt="Mountains" width=700 height=530>
+</div>
+
+<div class="vid">
+<video width="1200" height="800" controls>
+<source src="Images/compilation2.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="tts">
+<h1>Text to Speech Demo</h1>
+
+  <label for="text">Text to read:</label>
+  <textarea id="text">Hello! This is text to speech.</textarea>
+
+  <div>
+    <button id="speakBtn">Speak</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="resumeBtn">Resume</button>
+    <button id="stopBtn">Stop</button>
+  </div>
+
+  <script>
+    // 2) Check browser support
+    if (!("speechSynthesis" in window)) {
+      alert("Sorry, your browser doesn't support text-to-speech.");
+    }
+
+    // 3) Grab elements
+    const textEl = document.getElementById("text");
+    const speakBtn = document.getElementById("speakBtn");
+    const pauseBtn = document.getElementById("pauseBtn");
+    const resumeBtn = document.getElementById("resumeBtn");
+    const stopBtn = document.getElementById("stopBtn");
+
+    let utterance = null;
+
+    // 4) Speak function
+    function speak() {
+      const text = textEl.value.trim();
+      if (!text) return;
+
+      // Stop any existing speech before starting new
+      window.speechSynthesis.cancel();
+
+      utterance = new SpeechSynthesisUtterance(text);
+
+      // Optional: tweak voice settings
+      utterance.rate = 1;   // 0.1 to 10
+      utterance.pitch = 1;  // 0 to 2
+      utterance.volume = 1; // 0 to 1
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // 5) Wire up buttons
+    speakBtn.addEventListener("click", speak);
+    pauseBtn.addEventListener("click", () => window.speechSynthesis.pause());
+    resumeBtn.addEventListener("click", () => window.speechSynthesis.resume());
+    stopBtn.addEventListener("click", () => window.speechSynthesis.cancel());
+  </script>
+</div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+body{
+
+  background-color: #854a4a;
+
+}
+
+
+p{
+  color: #c46868;
+}
+
+.center-img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px; 
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #9e6d6d;
+}
+
+
+ul li a.active {
+  background-color: #401f1f;
+}
+
+div.marquee1
+{
+	color:#401f1f;
+	padding: 1px;
+	font-size: 20px;
+	font-family:Arial Black, Calibri;
+}
+
+div.section1
+{
+	background-color: #a15252;
+}
+
+div.section2
+{
+	background-color: #9e6d6d;
+	color:#401f1f;
+	display:block;
+	font-family:Arial Black;
+	padding:0px;
+}
+
+div.images-gallery {
+  background-color: #524343;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.images-gallery img {
+  padding: 10px;
+}
+
+div.welcometext {
+	background-color: #9e6d6d;
+	color:#401f1f;
+	display:block;
+	font-size: 20px;
+	font-family:Arial Black, Calibri;
+	padding: 7px;
+}
+
+.festival-table {
+      width: 80%;
+      margin: 40px auto;
+      border-collapse: collapse; /* removes gaps between borders */
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Table headers */
+   
+.festival-table th {
+      background-color: #a15252;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    /* Table cells */
+   
+.festival-table td {
+      border: 3px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      color: grey;
+    }
+
+    /* Row hover effect */
+   
+.festival-table tr:hover {
+      background-color: #ffffff;
+    }
+
+div.OSTITLE {
+color: #ffffff;
+display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:465px; 
+	font-size:24px;
+
+}
+
+div.OSTITLE2 {
+color: #ffffff;
+display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:200px; 
+	font-size:24px;
+
+}
+
+<html>
+<style>
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 33%;
+  background-color: #dcb7b7;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #524343;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #854a4a;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: 2px solid #401f1f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #401f1f;
+}
+
+</style>
+
+div.tts{
+    textarea: width: 100%; height: 120px;
+    button: margin-right: 8px; margin-top: 8px; 
+}
+
+div.vid{
+	text-align: center;
+}
+
+<body>
